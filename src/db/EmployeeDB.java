@@ -17,15 +17,15 @@ public class EmployeeDB {
     }
 
     public void addEmployee(Employee employee) {
-        //TODO: Implement
+        employees.add(employee);
     }
 
     public void deleteEmployee(Employee employee) {
-        //TODO: Implement
+        employees.remove(Integer.parseInt(employee.getId()));
     }
 
     public void updateEmployee(Employee employee) {
-        //TODO: Implement
+        employees.set(Integer.parseInt(employee.getId()), employee);
     }
 
     private void addMockData() {

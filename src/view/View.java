@@ -3,6 +3,7 @@ package view;
 import db.EmployeeDB;
 import models.Employee;
 
+import java.util.Date;
 import java.util.Scanner;
 
 public class View {
@@ -16,7 +17,29 @@ public class View {
      * Show the interface to add a employee to the db
      */
     public void showAddEmployee() {
-        //TODO: implement
+        System.out.println("Id: ");
+        String id = scanner.next();
+
+        System.out.println("Prename: ");
+        String prename = scanner.next();
+
+        System.out.println("Surname: ");
+        String surname = scanner.next();
+
+        System.out.println("jobDescription: ");
+        String jobDescription = scanner.next();
+
+        System.out.println("birthdate: ");
+        String birthdate = scanner.next();
+
+        System.out.println("salary: ");
+        Double salary = scanner.nextDouble();
+
+        System.out.println("employmentDate: ");
+        String employmentDate = scanner.next();
+
+        Employee employee = new Employee(id, prename, surname, jobDescription, birthdate, salary, employmentDate);
+
     }
 
     /**

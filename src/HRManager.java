@@ -36,6 +36,20 @@ public class HRManager {
         //TODO: add error handling
         int selectedMenuId = scanner.nextInt();
         showMenu(selectedMenuId);
+
+        /*
+        int selectedMenuId= 0;
+        do{
+            try {
+                selectedMenuId= scanner.nextInt();
+                showMenu(selectedMenuId);
+            } catch (InputMismatchException e) {
+                System.out.print("Error");
+                printMenu();
+            }
+        }while(selectedMenuId != 1 && selectedMenuId != 2 && selectedMenuId != 3 && selectedMenuId != 4 &&
+                selectedMenuId != 5);
+        */
     }
 
     private static void showMenu(int selectedMenuId) {
